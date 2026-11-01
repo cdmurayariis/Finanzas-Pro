@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_dashboard">
+
+    <fragment
+        android:id="@+id/nav_dashboard"
+        android:name="com.example.aplicacion_financiero.ui.dashboard.DashboardFragment"
+        android:label="Inicio"
+        tools:layout="@layout/fragment_dashboard">
+
+        <action
+            android:id="@+id/action_dashboard_to_reports"
+            app:destination="@id/nav_reports" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_transactions"
+        android:name="com.example.aplicacion_financiero.ui.transactions.TransactionsFragment"
+        android:label="Movimientos"
+        tools:layout="@layout/fragment_transactions" />
+
+    <fragment
+        android:id="@+id/nav_budget"
+        android:name="com.example.aplicacion_financiero.ui.budget.BudgetFragment"
+        android:label="Presupuesto"
+        tools:layout="@layout/fragment_budget" />
+
+    <fragment
+        android:id="@+id/nav_savings"
+        android:name="com.example.aplicacion_financiero.ui.savings.SavingsFragment"
+        android:label="Ahorros"
+        tools:layout="@layout/fragment_savings" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.aplicacion_financiero.ui.profile.ProfileFragment"
+        android:label="Perfil"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_reports"
+        android:name="com.example.aplicacion_financiero.ui.reports.ReportsFragment"
+        android:label="Reportes"
+        tools:layout="@layout/fragment_reports" />
+
+</navigation>
